@@ -1,41 +1,36 @@
 # ML-Logistic-regression-algorithm-challenge
 
-
 ![DSN logo](DSN_logo.png)|DSN Algorithm Challenge|
 |---|---|
 
-A lot of data scientists or machine learning enthusiasts do use various machine learning algorithms as a black box without knowing how they work or the mathematics behind it. The purpose of this challenge is to encourage the mathematical understanding of machine learning algorithms, their break and yield point. 
+Author: Adesola Tolulope Timilehin
 
-In summary, participants are encouraged to understand the fundamental concepts behind machine learning algorithms/models.
+Date: 21/04/2020
 
+Building a logistic regresstion model from scratch:
 
-The rules and guidelines for this challenge are as follows:
+The logistic regresstion model unlike the name suggests is a classification.
+It is very similar to the linear Regression model.
 
-1. Ensure to register at https://bit.ly/dsnmlhack 
+The major difference is the sigmoid function; 
+The sigmoid function is applied on the Linear regression function to change it from outputing continous values to probobalistic values.
 
-2. The algorithm challenge is open to all.
+# lr = the learning rate is usually very small, it determines how far we go in a direction with each step.
+# n_iters = the number of iterations.
+# weight = Weight is the strenght of the connection. its reflects the steepness of the sigmoid graph
+# bias = Bias is how far away the real value a given value is.
+           
 
-3. Participants are expected to design and develop the Logistic Regression algorithm from scratch using Python or R programming.
+# dw = This is the derivative w.r.t weight
+# db = This is the derivative w.r.t bias
 
-4. For python developers (numpy is advisable).
+# y_pred = This is the predicted value/our y value 
+# y_pred_classification = this will classify the predicted value into 1 or 0.
 
-5. To push your solution to us, make a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) to DSN's GitHub page at  https://www.github.com/datasciencenigeria/ML-Logistic-regression-algorithm-challenge. Ensure to add your readme file to understand your code.
+the predict function will return either 1 or 0 since our logistic regression model is a classification model.
+We have succedded in turning our linear regression model which is continous into a classification model.
 
-6. The top 3 optimized code will be compensated as follows:
+# LogisticRegression.ipynb: jupyter notebook script containing the code for building the model.
 
-- **1st position**: 20GB data plan.
-- **2nd position**: 15GB data plan.
-- **3rd position**: 10GB data plan.
-
-7. Add your scripts and readme.MD file as a folder saved as your full name (surname_first_middle name) by making a pull request to the repository.
-
----
-For issues on this challenge kindly reach out to the AI+campus/city managers
-
-**Twitter**: [@DataScienceNIG](https://twitter.com/DataScienceNIG), [@elishatofunmi](https://twitter.com/Elishatofunmi), [@o_funminiyi](https://twitter.com/o_funminiyi), [@gbganalyst](https://twitter.com/gbganalyst) 
-
-or
-
-**Call**: +2349062000119,+2349080564419.
-
-Good luck!
+# LogisticRegression.py: python script containing the code for building the model.
+  
